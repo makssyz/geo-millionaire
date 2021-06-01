@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        GoogleMapsView()
-//            .edgesIgnoringSafeArea(.all)
         GoogleStreetView()
             .edgesIgnoringSafeArea(.all)
     }
