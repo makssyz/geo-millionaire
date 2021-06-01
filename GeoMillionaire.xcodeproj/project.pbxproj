@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101A41AF266647AC000DEBB3 /* GoogleStreetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A41AE266647AC000DEBB3 /* GoogleStreetView.swift */; };
+		101A41B426665EBD000DEBB3 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A41B326665EBD000DEBB3 /* Database.swift */; };
 		109A90BC2664EA050030F08D /* GeoMillionaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109A90BB2664EA050030F08D /* GeoMillionaireApp.swift */; };
 		109A90BE2664EA050030F08D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109A90BD2664EA050030F08D /* ContentView.swift */; };
 		109A90C02664EA0A0030F08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109A90BF2664EA0A0030F08D /* Assets.xcassets */; };
 		109A90C32664EA0A0030F08D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109A90C22664EA0A0030F08D /* Preview Assets.xcassets */; };
 		2A35CE112664F07000704AFB /* Guesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35CE102664F07000704AFB /* Guesser.swift */; };
+		C4F220234E94AEABE67FCC16 /* libPods-GeoMillionaire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6CB8AD128FDFC3CA9C79FA /* libPods-GeoMillionaire.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		101A41AE266647AC000DEBB3 /* GoogleStreetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleStreetView.swift; sourceTree = "<group>"; };
+		101A41B326665EBD000DEBB3 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		109A90B82664EA050030F08D /* GeoMillionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoMillionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109A90BB2664EA050030F08D /* GeoMillionaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMillionaireApp.swift; sourceTree = "<group>"; };
 		109A90BD2664EA050030F08D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		109A90C22664EA0A0030F08D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		109A90C42664EA0A0030F08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A35CE102664F07000704AFB /* Guesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guesser.swift; sourceTree = "<group>"; };
+		8D6CB8AD128FDFC3CA9C79FA /* libPods-GeoMillionaire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoMillionaire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D176CF1302525B42602DA456 /* Pods-GeoMillionaire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoMillionaire.debug.xcconfig"; path = "Target Support Files/Pods-GeoMillionaire/Pods-GeoMillionaire.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2511B955999B83AB02AA26 /* Pods-GeoMillionaire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoMillionaire.release.xcconfig"; path = "Target Support Files/Pods-GeoMillionaire/Pods-GeoMillionaire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F220234E94AEABE67FCC16 /* libPods-GeoMillionaire.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				109A90BA2664EA050030F08D /* GeoMillionaire */,
 				109A90B92664EA050030F08D /* Products */,
+				FFFEC5FDBC9C759F5D9969AE /* Pods */,
+				CD5CF719D831EE9C2E9C63DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +67,12 @@
 			children = (
 				2A35CE102664F07000704AFB /* Guesser.swift */,
 				109A90BB2664EA050030F08D /* GeoMillionaireApp.swift */,
+				101A41AE266647AC000DEBB3 /* GoogleStreetView.swift */,
 				109A90BD2664EA050030F08D /* ContentView.swift */,
 				109A90BF2664EA0A0030F08D /* Assets.xcassets */,
 				109A90C42664EA0A0030F08D /* Info.plist */,
 				109A90C12664EA0A0030F08D /* Preview Content */,
+				101A41B326665EBD000DEBB3 /* Database.swift */,
 			);
 			path = GeoMillionaire;
 			sourceTree = "<group>";
@@ -72,6 +85,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CD5CF719D831EE9C2E9C63DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D6CB8AD128FDFC3CA9C79FA /* libPods-GeoMillionaire.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFFEC5FDBC9C759F5D9969AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D176CF1302525B42602DA456 /* Pods-GeoMillionaire.debug.xcconfig */,
+				ED2511B955999B83AB02AA26 /* Pods-GeoMillionaire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 109A90C72664EA0A0030F08D /* Build configuration list for PBXNativeTarget "GeoMillionaire" */;
 			buildPhases = (
+				35FB6F915264F3A11B868CDD /* [CP] Check Pods Manifest.lock */,
 				109A90B42664EA050030F08D /* Sources */,
 				109A90B52664EA050030F08D /* Frameworks */,
 				109A90B62664EA050030F08D /* Resources */,
+				479EA2816ACE3832645653F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,13 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35FB6F915264F3A11B868CDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoMillionaire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		479EA2816ACE3832645653F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoMillionaire/Pods-GeoMillionaire-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoMillionaire/Pods-GeoMillionaire-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoMillionaire/Pods-GeoMillionaire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		109A90B42664EA050030F08D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101A41AF266647AC000DEBB3 /* GoogleStreetView.swift in Sources */,
 				109A90BE2664EA050030F08D /* ContentView.swift in Sources */,
 				2A35CE112664F07000704AFB /* Guesser.swift in Sources */,
+				101A41B426665EBD000DEBB3 /* Database.swift in Sources */,
 				109A90BC2664EA050030F08D /* GeoMillionaireApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +344,7 @@
 		};
 		109A90C82664EA0A0030F08D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D176CF1302525B42602DA456 /* Pods-GeoMillionaire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +367,7 @@
 		};
 		109A90C92664EA0A0030F08D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2511B955999B83AB02AA26 /* Pods-GeoMillionaire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
