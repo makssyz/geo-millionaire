@@ -13,7 +13,7 @@
 		109A90BE2664EA050030F08D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109A90BD2664EA050030F08D /* ContentView.swift */; };
 		109A90C02664EA0A0030F08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109A90BF2664EA0A0030F08D /* Assets.xcassets */; };
 		109A90C32664EA0A0030F08D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109A90C22664EA0A0030F08D /* Preview Assets.xcassets */; };
-		2A35CE112664F07000704AFB /* Guesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35CE102664F07000704AFB /* Guesser.swift */; };
+		2A35CE112664F07000704AFB /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35CE102664F07000704AFB /* AnswerView.swift */; };
 		C4F220234E94AEABE67FCC16 /* libPods-GeoMillionaire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6CB8AD128FDFC3CA9C79FA /* libPods-GeoMillionaire.a */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		109A90BF2664EA0A0030F08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109A90C22664EA0A0030F08D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		109A90C42664EA0A0030F08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A35CE102664F07000704AFB /* Guesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guesser.swift; sourceTree = "<group>"; };
+		2A35CE102664F07000704AFB /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		8D6CB8AD128FDFC3CA9C79FA /* libPods-GeoMillionaire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoMillionaire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D176CF1302525B42602DA456 /* Pods-GeoMillionaire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoMillionaire.debug.xcconfig"; path = "Target Support Files/Pods-GeoMillionaire/Pods-GeoMillionaire.debug.xcconfig"; sourceTree = "<group>"; };
 		ED2511B955999B83AB02AA26 /* Pods-GeoMillionaire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoMillionaire.release.xcconfig"; path = "Target Support Files/Pods-GeoMillionaire/Pods-GeoMillionaire.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		109A90BA2664EA050030F08D /* GeoMillionaire */ = {
 			isa = PBXGroup;
 			children = (
-				2A35CE102664F07000704AFB /* Guesser.swift */,
+				2A35CE102664F07000704AFB /* AnswerView.swift */,
 				109A90BB2664EA050030F08D /* GeoMillionaireApp.swift */,
 				101A41AE266647AC000DEBB3 /* GoogleStreetView.swift */,
 				109A90BD2664EA050030F08D /* ContentView.swift */,
@@ -217,7 +217,7 @@
 			files = (
 				101A41AF266647AC000DEBB3 /* GoogleStreetView.swift in Sources */,
 				109A90BE2664EA050030F08D /* ContentView.swift in Sources */,
-				2A35CE112664F07000704AFB /* Guesser.swift in Sources */,
+				2A35CE112664F07000704AFB /* AnswerView.swift in Sources */,
 				101A41B426665EBD000DEBB3 /* Database.swift in Sources */,
 				109A90BC2664EA050030F08D /* GeoMillionaireApp.swift in Sources */,
 			);
