@@ -1,1 +1,2 @@
-# geo-millionaire
+# Description
+GeoMillionaire is a game inspired by https://www.GeoGuessr.com and "Who Wants to Be a Millionaire?" in which you need to collect as many bags of money as possible. You get thrown into a random place on earth and have to find out where you are. The faster you are, the more 💰 you can get! When you feel confident to make a guess, you have to pick a country from a a selection of four possible answers. Every guess counts, because one wrong answer throws you right back at the start.
