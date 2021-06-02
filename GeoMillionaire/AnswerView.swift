@@ -1,5 +1,5 @@
 //
-//  Guesser.swift
+//  AnswerView.swift
 //  GeoMillionaire
 //
 //  Created by stud18 on 31.05.21.
@@ -30,15 +30,20 @@ let answers: [String] = [
 ]
 
 var correctAnswer: Int = 7  //Zufallszahl nach jedem Laden
-var userScore: Int = 0
 
-struct Guesser: View {
+struct AnswerView: View {
+    @Binding var viewState: String
+    @Binding var stakeNumber: Int
+    @Binding var scoreNumber: Int
     var answerA: String = "Answer 1"
     var answerB: String = "Answer 2"
     var answerC: String = "Answer 3"
     var answerD: String = "Answer 4"
-    
-    init() {
+    init(viewState: Binding<String>, stakeNumber: Binding<Int>, scoreNumber: Binding<Int>) {
+        self._viewState = viewState
+        self._stakeNumber = stakeNumber
+        self._scoreNumber = scoreNumber
+        
         var randomAnswer1: Int = Int.random(in: 0..<answers.count)
         var randomAnswer2: Int = Int.random(in: 0..<answers.count)
         var randomAnswer3: Int = Int.random(in: 0..<answers.count)
@@ -90,7 +95,6 @@ struct Guesser: View {
             }
         }
     }
-    
     @State private var colorAnswerA: Color = Color.accentColor
     @State private var colorAnswerB: Color = Color.accentColor
     @State private var colorAnswerC: Color = Color.accentColor
@@ -99,7 +103,9 @@ struct Guesser: View {
     @State private var givenAnswerWasCorrect: Bool = false
     var body: some View {
         VStack(spacing: 25) {
-            Text("Score: \(userScore)")
+            Text("Score: \(scoreNumber)")
+            Text("Money Bags: \(stakeNumber)")
+                .opacity(answerButtonsDisabled ? 0 : 1)
             Text("Where are you?")
                 .font(.title)
                 .frame(maxWidth: .infinity, maxHeight: 50, alignment: .center)
@@ -113,7 +119,7 @@ struct Guesser: View {
                     Button(
                         action: {
                             if answerA == answers[correctAnswer] {
-                                userScore += 1
+                                self.scoreNumber = self.scoreNumber + self.stakeNumber
                                 self.colorAnswerA = Color.green
                                 self.givenAnswerWasCorrect = true
                             } else {
@@ -142,7 +148,7 @@ struct Guesser: View {
                     Button(
                         action: {
                             if answerB == answers[correctAnswer] {
-                                userScore += 1
+                                self.scoreNumber = self.scoreNumber + self.stakeNumber
                                 self.colorAnswerB = Color.green
                                 self.givenAnswerWasCorrect = true
                             } else {
@@ -172,7 +178,7 @@ struct Guesser: View {
                     Button(
                         action: {
                             if answerC == answers[correctAnswer] {
-                                userScore += 1
+                                self.scoreNumber = self.scoreNumber + self.stakeNumber
                                 self.colorAnswerC = Color.green
                                 self.givenAnswerWasCorrect = true
                             } else {
@@ -201,7 +207,7 @@ struct Guesser: View {
                     Button(
                         action: {
                             if answerD == answers[correctAnswer] {
-                                userScore += 1
+                                self.scoreNumber = self.scoreNumber + self.stakeNumber
                                 self.colorAnswerD = Color.green
                                 self.givenAnswerWasCorrect = true
                             } else {
@@ -232,6 +238,11 @@ struct Guesser: View {
                 action: {
                     // Wenn auf "Next Location" geklickt wird: Weiter zu Street View
                     // Wenn auf "End Game" geklickt wird: Weiter zum Startbildschirm
+                    if givenAnswerWasCorrect {
+                        self.viewState = "streetview"
+                    } else {
+                        self.viewState = "startmenu"
+                    }
                 }
             ) {
                 Text(givenAnswerWasCorrect ? "Next Location" : "End Game")
@@ -248,8 +259,8 @@ struct Guesser: View {
     }
 }
 
-struct Guesser_Previews: PreviewProvider {
+struct AnswerView_Previews: PreviewProvider {
     static var previews: some View {
-        Guesser()
+        AnswerView(viewState: .constant("answerview"), stakeNumber: .constant(30), scoreNumber: .constant(1200))
     }
 }
