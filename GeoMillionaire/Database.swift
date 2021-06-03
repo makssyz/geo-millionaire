@@ -59,6 +59,16 @@ var locations = [
         Location(name: "Santiago", latitude: -33.4992025, longitude: -70.6131535),
         Location(name: "La Serena", latitude: -29.9339906, longitude: -71.3358378),
         Location(name: "Luis Soto", latitude: -46.8396877, longitude: -72.6905431)
+    ],
+    "Ireland": [
+        Location(name: "Galway", longitude: 53.2676577, latitude: -9.0548195),
+        Location(name: "Dublin", longitude: 53.3425968320422753, latitude: -6.267052005847347),
+        Location(name: "Rock of Cashel", longitude: 52.51999378086569, latitude: -7.891112867968928)
+    ],
+    "United Kingdom": [
+        Location(name: "Stonehenge in Salisbury", longitude: 51.17855446805663, latitude: -1.826996214826352),
+        Location(name: "British Museum in London", longitude: 51.51848086057613, latitude: -0.125804404488008),
+        Location(name: "Buckingham Palace in London", longitude: 51.5008413, latitude: -0.1429878)
     ]
 ]
 
