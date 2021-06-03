@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		101A41AF266647AC000DEBB3 /* GoogleStreetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A41AE266647AC000DEBB3 /* GoogleStreetView.swift */; };
 		101A41B426665EBD000DEBB3 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A41B326665EBD000DEBB3 /* Database.swift */; };
+		105D4FD12667C710005F3FF7 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D4FD02667C710005F3FF7 /* StartView.swift */; };
 		109A90BC2664EA050030F08D /* GeoMillionaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109A90BB2664EA050030F08D /* GeoMillionaireApp.swift */; };
 		109A90BE2664EA050030F08D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109A90BD2664EA050030F08D /* ContentView.swift */; };
 		109A90C02664EA0A0030F08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109A90BF2664EA0A0030F08D /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		101A41AE266647AC000DEBB3 /* GoogleStreetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleStreetView.swift; sourceTree = "<group>"; };
 		101A41B326665EBD000DEBB3 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		105D4FD02667C710005F3FF7 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		109A90B82664EA050030F08D /* GeoMillionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoMillionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109A90BB2664EA050030F08D /* GeoMillionaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMillionaireApp.swift; sourceTree = "<group>"; };
 		109A90BD2664EA050030F08D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				109A90C42664EA0A0030F08D /* Info.plist */,
 				109A90C12664EA0A0030F08D /* Preview Content */,
 				101A41B326665EBD000DEBB3 /* Database.swift */,
+				105D4FD02667C710005F3FF7 /* StartView.swift */,
 			);
 			path = GeoMillionaire;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				101A41AF266647AC000DEBB3 /* GoogleStreetView.swift in Sources */,
 				109A90BE2664EA050030F08D /* ContentView.swift in Sources */,
 				2A35CE112664F07000704AFB /* AnswerView.swift in Sources */,
+				105D4FD12667C710005F3FF7 /* StartView.swift in Sources */,
 				101A41B426665EBD000DEBB3 /* Database.swift in Sources */,
 				109A90BC2664EA050030F08D /* GeoMillionaireApp.swift in Sources */,
 			);

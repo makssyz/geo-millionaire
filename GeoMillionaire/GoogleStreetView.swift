@@ -10,10 +10,14 @@ import GoogleMaps
 
 struct GoogleStreetView: UIViewRepresentable {
     
+    var randomLocation: Location
+    
     func makeUIView(context: Context) -> GMSPanoramaView {
         let panoView = GMSPanoramaView(frame: .zero)
-        panoView.moveNearCoordinate(CLLocationCoordinate2D(latitude: 52.3996937, longitude: 13.0483718))
-   
+        
+        print("\(randomLocation.name), \(randomLocation.latitude), \(randomLocation.longitude)")
+        
+        panoView.moveNearCoordinate(CLLocationCoordinate2D(latitude: randomLocation.latitude, longitude: randomLocation.longitude))
         return panoView
     }
     
@@ -22,15 +26,17 @@ struct GoogleStreetView: UIViewRepresentable {
     }
 }
 
+
+
 struct OverlayedGoogleStreetView: View {
-    @State private var streetView = GoogleStreetView()
     @Binding var viewState: String
     @Binding var stakeNumber: Int
+    @Binding var currentLocation: Location
     @State var timeRemaining: Int = 120
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
         ZStack {
-            streetView
+            GoogleStreetView(randomLocation: currentLocation)
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment: .leading) {
                 Button(
@@ -57,10 +63,12 @@ struct OverlayedGoogleStreetView: View {
         }
         
     }
+    
+    
 }
 
 struct GoogleStreetView_Previews: PreviewProvider {
     static var previews: some View {
-        OverlayedGoogleStreetView(viewState: .constant("streetview"), stakeNumber: .constant(0))
+        OverlayedGoogleStreetView(viewState: .constant("streetview"), stakeNumber: .constant(0), currentLocation: .constant(Location(name: "Potsdam", latitude: 52.3996937, longitude: 13.0483718)))
     }
 }
