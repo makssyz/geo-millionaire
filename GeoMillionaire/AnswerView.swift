@@ -83,7 +83,7 @@ struct AnswerView: View {
     @State private var givenAnswerWasCorrect: Bool = false
     var body: some View {
         VStack(spacing: 25) {
-            Text("Score: \(scoreNumber)")
+            Text("Score: \(scoreNumber) 💰")
             Text("Money Bags: \(stakeNumber)")
                 .opacity(answerButtonsDisabled ? 0 : 1)
             Text("Where are you?")
@@ -214,10 +214,10 @@ struct AnswerView: View {
                     .disabled(answerButtonsDisabled)
                 }
             }
+            Text("Location: \(currentLocation.name)")
+                .opacity(answerButtonsDisabled ? 1 : 0)
             Button(
                 action: {
-                    // Wenn auf "Next Location" geklickt wird: Weiter zu Street View
-                    // Wenn auf "End Game" geklickt wird: Weiter zum Startbildschirm
                     if givenAnswerWasCorrect {
                         self.currentCountry = Location.getRandomCountry()
                         self.currentLocation = Location.getRandomLocationFromCountry(country: self.currentCountry)
